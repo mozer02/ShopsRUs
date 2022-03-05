@@ -12,7 +12,7 @@ namespace ShopsRUs.Application.FakeData
         {
             get
             {
-                return new List<Customer>
+                return new List<Customer> //Yeni müşteri ekledik
                 {
                     new Customer(firstName: "Muhammed", "Özer", CustomerStatus.Employee, identityNumber: 1234567),
                     new Customer(firstName: "Mert", "Corukoğlu", CustomerStatus.Affiliate, identityNumber: 7654321),
@@ -22,11 +22,11 @@ namespace ShopsRUs.Application.FakeData
             }
 
         }
-        public List<ProductModel> Products
+        public List<ProductModel> Products 
         {
             get
             {
-                return new List<ProductModel>
+                return new List<ProductModel> //Ürünler Ekledik
                 {
                     new ProductModel
                     {

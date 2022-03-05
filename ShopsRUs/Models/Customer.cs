@@ -22,13 +22,18 @@ namespace ShopsRUs.Models
         public IReadOnlyList<Invoice> Invoices => invoices;
         public Customer(string firstName,string lastName,CustomerStatus customerStatus,int identityNumber)
         {
-            Id = Guid.NewGuid().ToString();
-            OnCreatedDate = DateTime.Now;
+            Id = Guid.NewGuid().ToString(); // Id oluşturuldu
+            OnCreatedDate = DateTime.Now; //Oluşturulma tarihi atandı
             SetName(firstName,lastName);
             SetIdentityNumber(identityNumber);
-            Status = (int)customerStatus;
+            Status = (int)customerStatus; //Durum bilgisi atandı
         }
         
+        /// <summary>
+        /// Constructerdan gelen isim ve soyisimde hata yoksa atama yapıldı 
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         public void SetName(string firstName,string lastName)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
@@ -38,11 +43,19 @@ namespace ShopsRUs.Models
             FirstName = firstName.Trim();
             LastName = lastName.Trim();
         }
+        /// <summary>
+        /// Müşteriye fatura ekleme metodu
+        /// </summary>
+        /// <param name="invoice"></param>
         public void AddInvoice(Invoice invoice)
         {
             this.invoices.Add(invoice);
             invoice.SetInvoiceNumber(invoices.Count());
         }
+        /// <summary>
+        /// Müşteriye Kimlik numarası atandı
+        /// </summary>
+        /// <param name="identityNumber"></param>
         public void SetIdentityNumber(int identityNumber)
         {
             if (identityNumber==null)

@@ -10,10 +10,14 @@ namespace ShopsRUs.Models
         public decimal DiscountAmount { get; set; }
         public Discount(decimal discountAmount)
         {
-            Id = Guid.NewGuid().ToString();
-            OnCreatedDate = DateTime.Now;
+            Id = Guid.NewGuid().ToString(); // Id oluşturuldu
+            OnCreatedDate = DateTime.Now; //Oluşturulma tarihi atandı
             SetDiscountAmount(discountAmount);            
         }
+        /// <summary>
+        /// İndirim tutarı hatalı değilse eklendi
+        /// </summary>
+        /// <param name="discountAmount"></param>
         public void SetDiscountAmount(decimal discountAmount)
         {
             if (discountAmount==null)

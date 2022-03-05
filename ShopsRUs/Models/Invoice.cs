@@ -16,22 +16,38 @@ namespace ShopsRUs.Models
         public IReadOnlyList<ProductModel> Products => products;
         public Invoice(string description)
         {
-            Id = Guid.NewGuid().ToString();
-            OnCreatedDate = DateTime.Now;
-            Description = description;
+            Id = Guid.NewGuid().ToString(); // Id oluşturuldu
+            OnCreatedDate = DateTime.Now; //Oluşturulma tarihi atandı
+            Description = description; //Açıklama eklendi
         }
+        /// <summary>
+        /// Fatura Numarası oluşturuldu
+        /// </summary>
+        /// <param name="invoiceCount"></param>
         public void SetInvoiceNumber(int invoiceCount)
         {
             InvoiceNumber = ("TR"+DateTime.Now.ToString("yyyy") + "0000" + invoiceCount);
         }
+        /// <summary>
+        /// İndirim tutarı atandı
+        /// </summary>
+        /// <param name="discount"></param>
         public void SetDiscount(Discount discount)
         {
             Discount = discount;
         }
+        /// <summary>
+        /// Toplam fiyat atandı
+        /// </summary>
+        /// <param name="totalPrice"></param>
         public void SetTotalPrice(decimal totalPrice)
         {
             TotalPrice = totalPrice;
         }
+        /// <summary>
+        /// Ürünler Atandı
+        /// </summary>
+        /// <param name="productModel"></param>
         public void AddProduct(ProductModel productModel)
         {
             products.Add(productModel);

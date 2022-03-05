@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ShopsRUs.Application
 {
-    public class ProductDto
+    public class ProductDtos
     {
         public string Barcode { get; set; }
         public int Quantity { get; set; }

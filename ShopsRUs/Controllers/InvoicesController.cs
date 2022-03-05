@@ -26,7 +26,7 @@ namespace ShopsRUs.Controllers
         {
             var discount = _createInvoiceService.OnProcess(dto);
 
-            return Ok(discount);
+            return Ok("İndirimli Fiyat = "+ discount);
         }
     }
 }
