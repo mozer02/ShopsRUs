@@ -8,6 +8,7 @@ namespace ShopsRUs.Application
     public class ProductDto
     {
         public string Barcode { get; private set; }
+
         public int Quantity { get; set; }
     }
 }
