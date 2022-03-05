@@ -10,13 +10,17 @@ namespace ShopsRUs.Models
         public string InvoiceNumber { get; private set; }
         public string Description { get; private set; }
         public decimal TotalPrice { get; private set; }
+        public string ShoppingType { get; set; }
         public Discount Discount { get; private set;}
 
-        public Invoice(string description)
+        private List<ProductModel> products = new List<ProductModel>();
+        public IReadOnlyList<ProductModel> Products => products;
+        public Invoice(string description, string shoppingType)
         {
             Id = Guid.NewGuid().ToString();
             OnCreatedDate = DateTime.Now;
-            Description = description;            
+            Description = description;
+            ShoppingType = shoppingType;
         }
         public void SetInvoiceNumber(int invoiceCount)
         {
