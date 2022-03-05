@@ -21,8 +21,8 @@ namespace ShopsRUs.Controllers
             _createInvoiceService = createInvoiceService;
         }
 
-        [HttpGet("create")]
-        public IActionResult CreateInvoice([FromBody] InvoiceRequestDto dto)
+        [HttpPost("create")]
+        public IActionResult CreateInvoice(InvoiceRequestDto dto)
         {
             var discount = _createInvoiceService.OnProcess(dto);
 

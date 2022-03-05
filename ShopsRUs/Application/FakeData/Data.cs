@@ -39,8 +39,8 @@ namespace ShopsRUs.Application.FakeData
                     new ProductModel
                     {
                         Barcode = "12141245",
-                        ProductName ="Gofret",
-                        ProductType = "Market",
+                        ProductName ="Bilgisayar",
+                        ProductType = "Teknoloji",
                         ProductPrice = 22,
                     },
                     new ProductModel
@@ -48,7 +48,7 @@ namespace ShopsRUs.Application.FakeData
                         Barcode = "12312334",
                         ProductName ="Gömlek",
                         ProductType = "Kıyafet",
-                        ProductPrice = 55,
+                        ProductPrice = 50,
                     },
 
                 };

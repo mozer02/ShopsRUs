@@ -7,7 +7,7 @@ namespace ShopsRUs.Models
 {
     public class Discount:Entity
     {
-        public decimal DiscountAmount { get;private set; }
+        public decimal DiscountAmount { get; set; }
         public Discount(decimal discountAmount)
         {
             Id = Guid.NewGuid().ToString();
