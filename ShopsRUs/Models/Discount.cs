@@ -8,12 +8,10 @@ namespace ShopsRUs.Models
     public class Discount:Entity
     {
         public decimal DiscountAmount { get;private set; }
-        public decimal Price { get;private set; }
         public Discount(decimal price, decimal discountAmount)
         {
             Id = Guid.NewGuid().ToString();
             OnCreatedDate = DateTime.Now;
-            SetPrice(price);
             SetDiscountAmount(discountAmount);            
         }
         public void SetDiscountAmount(decimal discountAmount)
@@ -24,13 +22,6 @@ namespace ShopsRUs.Models
             }
             DiscountAmount = discountAmount;
         }
-        public void SetPrice(decimal price)
-        {
-            if (price == null)
-            {
-                throw new Exception("Price cannot be empty!");
-            } 
-            Price = price;
-        }
+       
     }
 }

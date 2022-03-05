@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 
 namespace ShopsRUs.Application
 {
-    public class InvoiceRequestDto
+    public interface ICreateInvoiceService : IApplicationService<InvoiceRequestDto, decimal>
     {
-        public int IdentityNumber { get; set; }
-        public List<ProductDto> Products { get; set; }
     }
 }

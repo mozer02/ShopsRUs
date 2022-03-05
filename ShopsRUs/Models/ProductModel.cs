@@ -11,6 +11,7 @@ namespace ShopsRUs.Models
         public string Barcode { get;private set; }
         public string ProductType { get;private set; }
         public int ProductPrice { get;private set; }
-        public string Description { get; set; }        
+        public string Description { get; set; } 
+
     }
 }

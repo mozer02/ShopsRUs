@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ShopsRUs.Application
 {
-    public class InvoiceRequestDto
+    public class ProductDto
     {
-        public int IdentityNumber { get; set; }
-        public List<ProductDto> Products { get; set; }
+        public string Barcode { get; private set; }
+        public int Quantity { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ShopsRUs.Application.Services
+namespace ShopsRUs.Application
 {
     public interface IApplicationService<in TRequest, out TResponse>
     {
