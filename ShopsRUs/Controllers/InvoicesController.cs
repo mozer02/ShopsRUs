@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShopsRUs.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,21 @@ namespace ShopsRUs.Controllers
     [ApiController]
     public class InvoicesController : ControllerBase
     {
-        public IActionResult CreateInvoice()
-        {
 
+
+        private readonly ICreateInvoiceService _createInvoiceService;
+
+        public InvoicesController(ICreateInvoiceService createInvoiceService)
+        {
+            _createInvoiceService = createInvoiceService;
+        }
+
+
+        public IActionResult CreateInvoice(InvoiceRequestDto dto)
+        {
+            var discount = _createInvoiceService.OnProcess(dto);
+
+            return Ok(discount);
         }
     }
 }

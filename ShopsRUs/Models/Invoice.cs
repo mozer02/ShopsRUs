@@ -28,6 +28,10 @@ namespace ShopsRUs.Models
         {
             Discount = discount;
         }
+        public void SetTotalPrice(decimal totalPrice)
+        {
+            TotalPrice = totalPrice;
+        }
         public void AddProduct(ProductModel productModel)
         {
             products.Add(productModel);
