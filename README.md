@@ -11,6 +11,6 @@ Bu istekleri aşağıdaki gibi FakeData daki veriler ile uygun şekilde doldurma
 
 ![ApiInvoice](https://user-images.githubusercontent.com/93456131/156902686-5f829717-1e87-46a9-8c1b-86bee11471f4.JPG)
 
-Yapılan isteklere karşılık servisimizde gerekli indirimleri yaparak indirim dahil nihai fatura tutarını sonucunu kullanıcıya aşağıdaki şekilde vermektedir.
+Yapılan isteklere karşılık servisimizde gerekli indirimleri yaparak indirim dahil nihai fatura tutarının sonucunu kullanıcıya aşağıdaki şekilde vermektedir.
 
 ![toplam](https://user-images.githubusercontent.com/93456131/156902818-c71c48a1-7aa7-424d-a6b3-e3d32faa9b06.JPG)
