@@ -14,3 +14,8 @@ Bu istekleri aşağıdaki gibi FakeData daki veriler ile uygun şekilde doldurma
 Yapılan isteklere karşılık servisimizde gerekli indirimleri yaparak indirim dahil nihai fatura tutarının sonucunu kullanıcıya aşağıdaki şekilde vermektedir.
 
 ![toplam](https://user-images.githubusercontent.com/93456131/156902818-c71c48a1-7aa7-424d-a6b3-e3d32faa9b06.JPG)
+
+# Mvc teknolojisi ile yaptığımız Unit Test çalışmasının görüntüleri aşağıda yer almaktadır.
+
+![unitTest](https://user-images.githubusercontent.com/93456131/157029161-519e8b95-3715-485c-a542-a3ea641f2da4.jpg)
+
