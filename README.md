@@ -4,7 +4,7 @@ Projenin UML Diagramı
 
 ![UmlDiagram](https://user-images.githubusercontent.com/93456131/156902331-4eb125c7-57a6-480c-bd8d-eabf73df48b2.JPG)
 
-.Net Core ile yaptğımız indirim oranları hesaplayan ShopsRUs Perakende Mağaza projemizde modeller ve servislerin yaptığı işlemler açıklama satırları ile belirtilmiştir.
+.Net Core ile yaptığımız indirim oranları hesaplayan ShopsRUs Perakende Mağaza projemizde modeller ve servislerin yaptığı işlemler açıklama satırları ile belirtilmiştir.
 Projemizde veritabanı olmadığından FakeData oluşturulup içerisine kullanıcılar ve ürünler eklendi.
 Projeyi çalıştırdığımızda aşağıda görüldüğü gibi Api üzerinden faturamızın oluşturulması için gerekli istekler istenmektedir (identityNumber,barcode,quantity). 
 Bu istekleri aşağıdaki gibi FakeData daki veriler ile uygun şekilde doldurmamız gerekmektedir.
