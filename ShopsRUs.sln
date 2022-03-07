@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopsRUs", "ShopsRUs\ShopsRUs.csproj", "{58D6A018-B110-4B00-9970-6C4E80284F4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopsRUsDiagram", "ShopsRUsDiagram\ShopsRUsDiagram.csproj", "{A14DF39D-1C77-408B-98F4-404CBEB6BA02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopsRUsDiagram", "ShopsRUsDiagram\ShopsRUsDiagram.csproj", "{A14DF39D-1C77-408B-98F4-404CBEB6BA02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopsRUs_UnitTest", "ShopsRUs_UnitTest\ShopsRUs_UnitTest.csproj", "{A1F16B0F-5899-4963-ABAC-509DF8F601DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A14DF39D-1C77-408B-98F4-404CBEB6BA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A14DF39D-1C77-408B-98F4-404CBEB6BA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A14DF39D-1C77-408B-98F4-404CBEB6BA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F16B0F-5899-4963-ABAC-509DF8F601DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F16B0F-5899-4963-ABAC-509DF8F601DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F16B0F-5899-4963-ABAC-509DF8F601DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F16B0F-5899-4963-ABAC-509DF8F601DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

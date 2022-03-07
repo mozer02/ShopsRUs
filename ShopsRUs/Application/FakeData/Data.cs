@@ -33,15 +33,15 @@ namespace ShopsRUs.Application.FakeData
                         Barcode = "1231231",
                         ProductName ="Kola",
                         ProductType = "Market",
-                        ProductPrice = 15,
+                        ProductPrice = 20,
 
                     },
                     new ProductModel
                     {
                         Barcode = "12141245",
-                        ProductName ="Bilgisayar",
+                        ProductName ="Mouse",
                         ProductType = "Teknoloji",
-                        ProductPrice = 22,
+                        ProductPrice = 80,
                     },
                     new ProductModel
                     {

@@ -8,6 +8,6 @@ namespace ShopsRUs.Application
     public class InvoiceRequestDto
     {
         public int IdentityNumber { get; set; }
-        public List<ProductDto> Products { get; set; }
+        public List<ProductDto> Products { get; set; } = new List<ProductDto>();
     }
 }
